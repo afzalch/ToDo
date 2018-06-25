@@ -1,0 +1,86 @@
+body{
+  background: #00467F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  margin: 0;
+  background: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+input{
+  background: #f7f7f7;
+  color: #2980b9;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 13px;
+  border: 0;
+  font-size: 18px;
+}
+
+li:hover span{
+  width: 30px;
+}
+
+li {
+  background: #fff;
+  color: #666;
+}
+
+li:nth-child(2n){
+  background: #f7f7f7;
+}
+
+
+
+li:hover .fa-trash-alt{
+  opacity: 1;
+  width: auto;
+  height: auto;
+}
+
+span{
+  background: #e74c3c;
+  line-height: 30px;
+  width: 0;
+  margin-right: 20px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s linear;
+}
+
+
+ul{
+  margin: 0;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+
+/* class for items that have been clicked, but not removed from list */
+.complete{
+  text-decoration: line-through;
+  color: gray;
+}
+
+/*  Addition sign to toggle whether user wants to add to to do list or not*/
+.fa-plus-square{
+  float: right;
+}
+
+.fa-trash-alt{
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+
+#container{
+  /* border: 2px solid gray; */
+  margin: 0 auto;
+  width: 360px;
+}
